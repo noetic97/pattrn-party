@@ -57,7 +57,13 @@ h3 span {
 button {
   text-align: center;
   background-color: #3f3244;
-  color: #F2F2F2
+  color: #F2F2F2;
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 50px 0 75px;
+  border-radius: 0;
 }
 
 div {
@@ -77,6 +83,7 @@ div {
   display: none;
   padding: 20px 0 0;
   border: 1px solid #666;
+  border-top: none;
   background-color: #fff;
 }
 
@@ -90,6 +97,8 @@ label {
   font-weight: 300;
   text-align: center;
   color: #3f3244;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #000;
 }
 
 label:before {
@@ -118,12 +127,28 @@ input:checked + label {
   display: block;
 }
 
-img {
-  width: 250px;
-  height: 200px;
-}
-
 .accordion-description {
   display: flex;
-  /*flex-direction: column;*/
+}
+
+img {
+  width: 200px;
+  height: 225px;
+  border: 1px solid #f2f2f2;
+  margin: 40px 15px;
+  align-items: center;
+}
+
+.tab-text-container {
+  text-align: left;
+  padding: 15px;
+  
+}
+
+.tab-text-container h4 {
+  margin: 10px 0;
+}
+
+.tab-text-container p {
+  margin: 20px 0;
 }
