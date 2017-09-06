@@ -81,6 +81,7 @@ button {
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
+  height: 300px;
 }
 
 .accordion-section {
@@ -89,6 +90,10 @@ button {
   border: 1px solid #666;
   border-top: none;
   background-color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
 }
 
 input {
@@ -166,13 +171,11 @@ input:checked + label {
 ///////////////////////////////////// */
 
 .flexible-card-box {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  grid-auto-columns: minmax(100px, auto);
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
 }
 
 .flex-cards {
@@ -183,10 +186,11 @@ input:checked + label {
 .flex-card-title {
   font-weight: 700;
   padding: 15px;
+  width: 100%;
   border-bottom: 2px solid #d1d2d3;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .flex-card-image {
@@ -196,41 +200,19 @@ input:checked + label {
 .flex-card-image-2 {
   display: block;
   width: 100%;
+  height: 150px;
+  object-fit: contain;
 }
+
 
 .flex-card-1 {
   grid-column: 1 / 3;
-  grid-row: 1 / 3;
-}
-
-.flex-card-2 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 3;
-}
-
-.flex-card-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 5;
-}
-
-.flex-card-4 {
-  grid-column: 2 / 3;
-  grid-row: 3 / 5;
-}
-
-.flex-card-5 {
-  grid-column: 3 / 3;
-  grid-row: 3 / 5;
-}
-
-.flex-card-6 {
-  grid-column: 1 / 2;
-  grid-row: 5 / 7;
+  grid-row: 1 / 2;
 }
 
 .flex-card-7 {
   grid-column: 2 / 4;
-  grid-row: 5 / 7;
+  grid-row: 3 / 4;
 }
 
 
@@ -244,6 +226,14 @@ input:checked + label {
   label {
     width: 100%;
     text-align: left;
+  }
+  
+  .accordion-section {
+    position: static;
+  }
+  
+  .accordion-box {
+    height: 800px;
   }
   
   .accordion-description {
