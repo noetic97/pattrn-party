@@ -62,7 +62,7 @@ button {
   height: 40px;
   font-size: 16px;
   padding: 10px;
-  margin: 50px 0 75px;
+  margin: 100px 0 50px;
   border-radius: 0;
 }
 
@@ -215,10 +215,108 @@ input:checked + label {
   grid-row: 3 / 4;
 }
 
+/*////////////Header Bar//////////*/
+
+.header-box {
+  width: 85vw;
+  height: 150px;
+  margin: 0 auto;
+  background-color: #D1D2D3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+nav a {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.header-input {
+  display: inherit;
+  border: 1px solid #666;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.header-menu {
+  display: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .header-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 40px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+  
+  .header-input {
+    display: inherit;
+    border: 1px solid #666;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  
+  nav a {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .header-input {
+    display: inherit;
+    border: 1px solid #666;
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  
+  nav a {
+    display: none;
+  }
+  
+  .header-input {
+    display: none;
+  }
+  .header-menu {
+    display: inline-block;
+  }
+}
+
 
 @media (max-width: 600px) {
   header {
     flex-direction: column;
+  }
+  
+  header.header-box {
+    flex-direction: row;
   }
   
 /*///////-- ACCORDION BOX --//////////*/
