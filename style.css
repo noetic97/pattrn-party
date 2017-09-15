@@ -251,6 +251,22 @@ nav a {
   font-weight: 500;
 }
 
+.dropdown-container {
+  background-color: #f2f2f2;
+  display: none;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.dropdown-nav {
+  text-align: center;
+}
+
+.header-dropdown-input {
+  display: none;
+  margin: 0 auto;
+}
+
 @media (max-width: 1000px) {
   .header-img {
     width: 75px;
@@ -306,6 +322,12 @@ nav a {
   }
   .header-menu {
     display: inline-block;
+  }
+  .dropdown-container {
+    display: block;
+  }
+  .header-dropdown-input {
+    display: block;
   }
 }
 
