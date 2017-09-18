@@ -236,13 +236,28 @@ input:checked + label {
 nav a {
   padding: 20px;
   font-size: 20px;
+  color: #3f3244;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #666;
 }
 
 .header-input {
+  text-align: center;
   display: inherit;
   border: 1px solid #666;
   font-size: 16px;
   padding: 5px;
+  background-image: url("./assets/mag-glass.png");
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+  background-size: 20px;
 }
 
 .header-menu {
@@ -317,6 +332,25 @@ nav a {
     display: none;
   }
   
+  .dropdown-nav {
+    padding: 10px;
+  }
+  
+  .dropdown-nav a {
+    padding: 20px;
+    font-size: 20px;
+    color: #3f3244;
+  }
+
+  .dropdown-nav a:link {
+      text-decoration: none;
+  }
+
+  .dropdown-nav a:hover {
+      text-decoration: underline;
+      color: #666;
+  }
+  
   .header-input {
     display: none;
   }
@@ -328,7 +362,17 @@ nav a {
   }
   .header-dropdown-input {
     display: block;
+    text-align: center;
+    display: inherit;
+    border: 1px solid #666;
+    font-size: 16px;
+    padding: 5px;
+    background-image: url("./assets/mag-glass.png");
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
   }
+  
   .hidden-nav {
     display: none;
   }
